@@ -1,0 +1,14 @@
+<html>
+
+{% for entry in entries %}
+
+<p> user name: </p>
+  <p> {{ entry.name }} </p>
+
+  <p> {{ entry.first }} </p>
+<p> {{ entry.last }}</p>
+<p> {{ entry.email }}</p>
+<p> {{ entry.phone_number }}</p>
+
+{% endfor %}
+</html>

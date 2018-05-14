@@ -1,0 +1,39 @@
+
+<h3 style="color:blue;">Weather Report </h3>
+<aside>
+<p>
+<table border="1" style='color: green; width:100%'>
+	<tr>
+		<td>City</td>
+		<td>State</td>
+
+		<td>Weather</td>
+        <td>Weather Report</td>
+		<td>Temp</td>
+		<td>Humid</td>
+		<td>Wind</td>
+		<td>Wind_mph</td>
+	</tr>
+	<tr>
+{% for  c in weather %}
+
+    {% if "http://icons.wxug.com/i/c/k/mostlycloudy.gif" == c %}
+        <td><img src='{{c}}' ></td>
+    {% else %}
+
+        <td>{{c}}</td>
+
+	{% endif %}
+{% endfor %}
+</tr>
+</table>
+	</p>
+</aside>
+
+<h1>
+    <p> create account:<a href="{{ url_for('add_entry') }}">Create Used Id</a> </p>
+    <p> login user id: <a href="{{ url_for('sign_in') }}">Sign In</a></p>
+
+</h1>
+
+
