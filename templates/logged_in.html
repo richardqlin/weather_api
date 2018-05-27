@@ -1,4 +1,4 @@
-
+<html>
 {% extends "base.html" %}
 {% block title %} Index {% endblock %}
 {% block head %}
@@ -44,11 +44,16 @@
 	</p>
 </aside>
 
-<h1>
-    <p> create account:<a href="{{ url_for('register') }}">Create Used Id</a> </p>
-    <p> login user id: <a href="{{ url_for('log') }}">Sign In</a></p>
-    <p> show all records <a href ="{{ url_for ('show_all') }}"> show all records</a></p>
 
-</h1>
+
+<p>{{ doc.name }}</p>
+<p>{{ doc.first }}</p>
+<p>{{ doc.last }}</p>
+<p>{{ doc.email }}</p>
+<p>{{ doc.phone_number }}</p>
+<p>{{ doc. date_time }}</p>
+<p> {{doc.city }}</p>
+<p> {{ doc.state }}</p>
 
 {% endblock %}
+</html>

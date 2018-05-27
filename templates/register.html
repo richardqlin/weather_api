@@ -1,6 +1,6 @@
 <html>
 
-<form action="{{ url_for('add_entry') }}" method="post">
+<form action="{{ url_for('register') }}" method="post">
 
     <p> username: <input type="text" name="name"> </p>
     <p> password: <input type="password" name="passwd"></p>
@@ -8,6 +8,8 @@
      <p> Lasr Name: <input type="text" name="last"></p>
     <p> email: <input type ="email" name="email"></p>
     <p> phone number: <input type="tel" name="phone_number"> </p>
+    <p> city: <input type="text" name="city"></p>
+    <p> state: <input type="text" name="state"></p>
 
  <p><input type = "submit" value="submit">  </p>
 </form>

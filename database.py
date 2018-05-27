@@ -26,4 +26,5 @@ class Database:
 
     @staticmethod
     def find_record(doc):
-        Database.db.user.find(doc)
+        return Database.db.user.find_one(doc)
+
